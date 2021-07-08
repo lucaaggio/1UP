@@ -1,0 +1,286 @@
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.paddingTop {
+  padding-top: 2em;
+}
+
+.flex {
+  display: flex;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flexEnd {
+  align-items: flex-end;
+}
+
+.flexStart {
+  align-items: flex-start;
+}
+
+.flexBetween {
+  justify-content: space-between;
+}
+
+.whiteCube {
+  width: 1em;
+  height: 1em;
+  color: #f2f2f2;
+  background: #f2f2f2;
+}
+
+.section_1 {
+  background: #3366ff;
+}
+.section_1 .logo {
+  flex-grow: 3;
+}
+.section_1 .logo img {
+  width: 100px;
+  padding: 0 0 0 5em;
+  color: #f2f2f2;
+}
+.section_1 .coin {
+  padding-left: 5em;
+}
+.section_1 .coin img {
+  width: 50px;
+  padding-right: 0.5em;
+}
+.section_1 .coin p {
+  color: #f2f2f2;
+}
+.section_1 .menu {
+  flex-grow: 1;
+}
+.section_1 .menu ul {
+  list-style: none;
+  justify-content: space-around;
+  padding: 0 5em;
+}
+.section_1 .menu ul li {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #f2f2f2;
+}
+.section_1 .menu ul :hover {
+  color: #f5c343;
+  cursor: pointer;
+}
+.section_1 .title {
+  padding: 8em 20em;
+}
+.section_1 .title h2 {
+  text-align: center;
+  color: #f2f2f2;
+  line-height: 1.5em;
+  font-style: italic;
+}
+.section_1 .icon {
+  height: 500px;
+}
+.section_1 .icon img {
+  width: 8%;
+}
+.section_1 .icon .scrivania {
+  right: 10%;
+  width: 35%;
+}
+.section_1 .icon .papera {
+  left: 20%;
+  transform: rotate(-8deg);
+}
+.section_1 .icon .valigia {
+  width: 25%;
+  left: 25%;
+  transform: rotate(-10deg);
+}
+.section_1 .icon .stella {
+  left: 20%;
+  top: 50%;
+  transform: rotate(5deg);
+}
+.section_1 .icon .cuore {
+  left: 35%;
+  top: 60%;
+  transform: rotate(-2deg);
+}
+.section_1 .last_1s_div {
+  padding: 4em 0 2em;
+}
+.section_1 .last_1s_div h2 {
+  font-size: 1.5em;
+  color: #f5c343;
+}
+.section_1 .yellowBg {
+  height: 100px;
+  background-color: #f5c343;
+}
+
+.section_2 {
+  background: #f2f2f2;
+  padding: 7em 10em;
+}
+.section_2 .mission {
+  background: #c6eafa;
+  width: 100%;
+}
+.section_2 .mission .missionText {
+  padding: 5em 20% 5em 5em;
+}
+.section_2 .mission .missionText h2 {
+  padding-bottom: 1.5em;
+}
+.section_2 .mission .missionText p {
+  font-size: 1.7em;
+}
+.section_2 .list {
+  padding: 10%;
+}
+.section_2 .list .listElement {
+  align-items: flex-start;
+}
+.section_2 .list .listElement .imgList {
+  height: 80px;
+}
+.section_2 .list .listElement .iconList {
+  width: 30%;
+}
+.section_2 .list .listElement .matita {
+  width: 25%;
+}
+.section_2 .list .listElement .iconCommunity {
+  width: 35%;
+}
+.section_2 .list .listElement h2 {
+  padding: 1em 0;
+  font-size: 1.7em;
+}
+.section_2 .list .svago {
+  padding: 0 10%;
+}
+.section_2 .list .personalizzazione {
+  padding-left: 2em;
+}
+
+.serving {
+  max-width: 70%;
+}
+.serving .servingText {
+  background: #c4c4c4;
+}
+.serving .servingText p {
+  padding: 7%;
+}
+.serving .servingImg {
+  width: 20%;
+}
+
+.section_3 {
+  background: #3366ff;
+  color: #f2f2f2;
+}
+.section_3 h2 {
+  padding-top: 2em;
+}
+.section_3 .small {
+  padding-top: 1em;
+}
+.section_3 .phone {
+  bottom: -20%;
+  right: 5%;
+}
+
+.section_4 {
+  background: #f2f2f2;
+  padding: 15em 10em 7em 10em;
+}
+.section_4 .why {
+  background: #9091fb;
+  width: 100%;
+  color: #f2f2f2;
+}
+.section_4 .why .whyText {
+  padding: 5em 20% 5em 5em;
+}
+.section_4 .why .whyText h2 {
+  padding-bottom: 1.5em;
+}
+.section_4 .why .whyText p {
+  font-size: 1.7em;
+}
+.section_4 .why .whyText .whyP2 {
+  padding-top: 1em;
+}
+
+.section_5 {
+  background: #c6eafa;
+}
+.section_5 h2 {
+  padding: 3em 0;
+}
+.section_5 .plan {
+  width: 70%;
+}
+.section_5 .plan h2 {
+  padding: 1em;
+}
+.section_5 .freePlan {
+  background: #f2f2f2;
+  border: 5px solid;
+}
+.section_5 .freePlan button {
+  background: #f5c343;
+}
+.section_5 .proPlan {
+  background: #f5c343;
+}
+.section_5 .proPlan button {
+  background: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */
