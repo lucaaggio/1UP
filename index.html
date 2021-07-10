@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1UP!</title>
+    <link rel="shortcut icon" type="image/svg" href="assets/images/logo.svg" />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" async></script>
   </head>
@@ -16,7 +17,7 @@
       </div>
       <div class="flex alignCenter paddingTop">
         <div class="flex alignCenter logo">
-          <img src="assets/images/logo.png" alt="logo" />
+          <img src="assets/images/logo.svg" alt="logo" />
 
           <div class="coin flex alignCenter">
             <img src="assets/images/section_1/coin.png" alt="coin" />
@@ -184,6 +185,7 @@
         <div class="whiteCube"></div>
       </div>
     </div>
+    <!-- SECTION 4 -->
     <div class="section_4">
       <div class="why">
         <div class="flex flexStart flexBetween">
@@ -205,6 +207,10 @@
             con i colleghi, ma anche un luogo con ambienti più confortevoli che
             facciano sentire le persone più a loro agio come a casa.
           </p>
+        </div>
+        <div class="flex flexEnd flexBetween">
+          <div class="whiteCube"></div>
+          <div class="whiteCube"></div>
         </div>
       </div>
       <!-- serving -->
@@ -238,9 +244,9 @@
         <div>
           <h2>PIANI E ABBONAMENTI</h2>
         </div>
-        <div class="flex flexBetween plan">
-          <div class="flex">
-            <div class="flex column freePlan">
+        <div class="flex flexAround plan">
+          <div class="flex column flexStart freePlan">
+            <div class="space">
               <h2>free</h2>
               <ul>
                 <li>Single player</li>
@@ -251,22 +257,26 @@
               </ul>
               <button>TRY FOR FREE</button>
             </div>
-            <div class="flex column proPlan">
+          </div>
+          <div class="flex column proPlan">
+            <div class="space">
               <h2>19 €\mese</h2>
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
+              <div class="flex">
+                <div class="ulSpace">
+                  <ul>
+                    <li>Multiplayer</li>
+                    <li>Custom rooms</li>
+                    <li>100 fornitures</li>
+                    <li>Custom Fornitures</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>3 default avatar</li>
+                    <li>Custom avatar</li>
+                    <li>Unlimited icon</li>
+                  </ul>
+                </div>
               </div>
               <button>ENTER IN YOUR OFFICE</button>
             </div>
@@ -279,5 +289,126 @@
         <div class="whiteCube"></div>
       </div>
     </div>
+    <!-- section_6 -->
+    <div class="flex column alignCenter section_6">
+      <img src="assets/images/mascotte.svg" alt="mascotte" />
+      <h2>TRY IT YOURSELF</h2>
+      <button>TRY THE DEMO</button>
+      <div class="login">
+        <div class="flex flexStart flexBetween">
+          <div class="whiteCube"></div>
+          <div class="whiteCube"></div>
+        </div>
+        <div class="flex column alignCenter loginText">
+          <h2>DID YOU LIKE IT?</h2>
+          <h2>YOU ALREADY KNOW IT?<span class="bold"> SIGN IN </span></h2>
+          <button>LOG-IN</button>
+        </div>
+        <div class="flex flexEnd flexBetween">
+          <div class="whiteCube"></div>
+          <div class="whiteCube"></div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION_7 -->
+    <div class="section_7">
+      <div class="flex flexStart flexBetween">
+        <div class="whiteCube"></div>
+        <div class="whiteCube"></div>
+      </div>
+      <div class="formDiv">
+        <div class="serving">
+          <div class="servingText">
+            <p>
+              1UP è un termine che deriva dal mondo dei videogiochi e che in
+              genere indica un oggetto che concede al giocatore una seconda
+              chance o un bonus.
+            </p>
+          </div>
+          <img
+            src="assets/images/stellaNotifica.png"
+            alt="stella notifica"
+            class="servingImg"
+          />
+        </div>
+        <div class="flex center">
+          <h2>ANY QUESTION?</h2>
+        </div>
+        <div class="contact">
+          <div class="flex flexStart flexBetween">
+            <div class="whiteCube"></div>
+            <div class="whiteCube"></div>
+          </div>
+
+          <div class="flex column contactForm">
+            <div class="flex flexBetween space">
+              <div class="flex column name">
+                <label>NAME</label>
+                <input type="text" name="firstName" placeholder="Your name.." />
+              </div>
+              <div class="flex column name">
+                <label>SURNAME</label>
+                <input
+                  type="text"
+                  name="secondName"
+                  placeholder="Your name.."
+                />
+              </div>
+            </div>
+            <div class="flex column space">
+              <label>EMAIL</label>
+              <input type="text" name="secondName" placeholder="Your name.." />
+            </div>
+            <div class="space">
+              <label>MESSAGE</label>
+              <textarea
+                type="text"
+                name="secondName"
+                placeholder="Your name.."
+              ></textarea>
+            </div>
+            <button>SUBMIT</button>
+          </div>
+
+          <div class="flex flexEnd flexBetween">
+            <div class="whiteCube"></div>
+            <div class="whiteCube"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flexEnd flexBetween">
+        <div class="whiteCube"></div>
+        <div class="whiteCube"></div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="flex flexBetween space">
+        <div class="flex column flexBetween privacy">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <p>privacy policy / cookie/ copiright</p>
+        </div>
+        <div class="flex info">
+          <ul class="contatti">
+            <li>alterego@1up.com</li>
+            <li>+39 375 869422</li>
+            <li>
+              Via Amedeo 38, <br />
+              20131 Milano
+            </li>
+          </ul>
+          <ul class="social">
+            <li>insta</li>
+            <li>face</li>
+            <li>twi</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flexEnd flexBetween">
+        <div class="whiteCube"></div>
+        <div class="whiteCube"></div>
+      </div>
+    </footer>
   </body>
 </html>
