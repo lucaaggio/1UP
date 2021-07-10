@@ -463,5 +463,9 @@ footer {
   }
   .social {
     margin-left: 20%;
+    i {
+      color: $purpleColor;
+      font-size: 2em;
+    }
   }
 }

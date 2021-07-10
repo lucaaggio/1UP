@@ -894,5 +894,9 @@ footer .contatti {
 footer .social {
   margin-left: 20%;
 }
+footer .social i {
+  color: #9091fb;
+  font-size: 2em;
+}
 
 /*# sourceMappingURL=style.css.map */
