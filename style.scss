@@ -439,6 +439,12 @@ $purpleColor: #9091fb;
       }
     }
   }
+  .massi {
+    .whiteCube {
+      background: $purpleColor;
+      color: $purpleColor;
+    }
+  }
 }
 
 footer {
