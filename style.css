@@ -494,6 +494,14 @@ p {
   font-weight: 600;
 }
 
+.big {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .section_1 {
   background: #3366ff;
 }
@@ -596,6 +604,8 @@ p {
 }
 .section_2 .mission .missionText h2 {
   padding-bottom: 1.5em;
+  font-weight: 600;
+  font-style: italic;
 }
 .section_2 .mission .missionText p {
   font-size: 1.7em;
@@ -646,6 +656,9 @@ p {
   background: #3366ff;
   color: #f2f2f2;
 }
+.section_3 .big {
+  font-weight: 600;
+}
 .section_3 h2 {
   padding-top: 2em;
 }
@@ -671,6 +684,8 @@ p {
 }
 .section_4 .why .whyText h2 {
   padding-bottom: 1.5em;
+  font-weight: 600;
+  font-style: italic;
 }
 .section_4 .why .whyText p {
   font-size: 1.7em;

@@ -93,6 +93,12 @@ $purpleColor: #9091fb;
 .bold {
   font-weight: 600;
 }
+.big {
+  font-weight: 600;
+}
+.italic {
+  font-style: italic;
+}
 //css section1
 
 .section_1 {
@@ -200,6 +206,8 @@ $purpleColor: #9091fb;
       padding: 5em 20% 5em 5em;
       h2 {
         padding-bottom: 1.5em;
+        font-weight: 600;
+        font-style: italic;
       }
       p {
         font-size: 1.7em;
@@ -252,6 +260,9 @@ $purpleColor: #9091fb;
 .section_3 {
   background: $primaryColor;
   color: $bgColor;
+  .big {
+    font-weight: 600;
+  }
   h2 {
     padding-top: 2em;
   }
@@ -274,6 +285,8 @@ $purpleColor: #9091fb;
       padding: 5em 20% 5em 5em;
       h2 {
         padding-bottom: 1.5em;
+        font-weight: 600;
+        font-style: italic;
       }
       p {
         font-size: 1.7em;
@@ -290,6 +303,7 @@ $purpleColor: #9091fb;
   h2 {
     padding: 1em 0;
   }
+
   ul {
     padding-bottom: 2em;
   }
