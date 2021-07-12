@@ -503,7 +503,6 @@ p {
 .section_1 .logo img {
   width: 100px;
   padding: 0 0 0 5em;
-  color: #f2f2f2;
 }
 .section_1 .coin {
   padding-left: 5em;
@@ -933,7 +932,7 @@ footer .social {
   margin-left: 20%;
 }
 footer .social i {
-  color: #9091fb;
+  color: #3366ff;
   font-size: 2em;
 }
 

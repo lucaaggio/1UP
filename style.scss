@@ -102,7 +102,6 @@ $purpleColor: #9091fb;
     img {
       width: 100px;
       padding: 0 0 0 5em;
-      color: $bgColor;
     }
   }
 
@@ -496,7 +495,7 @@ footer {
   .social {
     margin-left: 20%;
     i {
-      color: $purpleColor;
+      color: $primaryColor;
       font-size: 2em;
     }
   }
