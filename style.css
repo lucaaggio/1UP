@@ -514,6 +514,7 @@ p {
 }
 .section_1 .coin p {
   color: #f2f2f2;
+  font-family: Mono;
 }
 .section_1 .menu {
   flex-grow: 1;
@@ -540,6 +541,7 @@ p {
   color: #f2f2f2;
   line-height: 1.8;
   font-style: italic;
+  font-weight: 600;
 }
 .section_1 .icon {
   height: 500px;
@@ -756,14 +758,35 @@ p {
 }
 
 .section_6 {
-  padding: 5em 10em 7em 10em;
+  padding: 0 10em 7em 10em;
   background: #f2f2f2;
 }
 .section_6 img {
-  width: 5%;
+  width: 10%;
 }
 .section_6 h2 {
   font-style: italic;
+  padding: 0.5em 0 1em 0;
+  font-weight: 600;
+}
+.section_6 button {
+  background: #c6eafa;
+  color: black;
+  font-weight: 600;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='black' /></svg>");
+  padding: 1% 5%;
+  font-size: 2em;
+}
+@supports (border-image-source: none) {
+  .section_6 button {
+    border-radius: 26px;
+  }
 }
 .section_6 .login {
   margin: 5em 0;
@@ -776,6 +799,7 @@ p {
 }
 .section_6 .login h2 {
   padding-bottom: 1em;
+  font-weight: 400;
 }
 .section_6 .login button {
   background: #3366ff;
@@ -787,8 +811,6 @@ p {
   border-image-width: 1;
   border-image-outset: 0;
   border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23f2f2f2' /></svg>");
-  padding: 1% 5%;
-  font-size: 2em;
 }
 @supports (border-image-source: none) {
   .section_6 .login button {
@@ -801,6 +823,7 @@ p {
 }
 .section_7 h2 {
   color: #f2f2f2;
+  font-weight: 600;
 }
 .section_7 .formDiv {
   padding: 5em 5% 0em 5%;
@@ -817,13 +840,12 @@ p {
   padding: 2em 10%;
 }
 .section_7 .formDiv .contact .contactForm .space {
-  padding: 0 0 1em 0;
+  padding: 0.5em 0 1em 0;
 }
 .section_7 .formDiv .contact .contactForm textarea {
   width: 100%;
   resize: none;
   background: #f2f2f2;
-  margin-top: 0.7em;
   color: black;
   padding: 1% 0 1% 1%;
   height: 80px;
@@ -864,8 +886,8 @@ p {
   width: 45%;
 }
 .section_7 .formDiv .contact .contactForm label {
-  padding: 1% 0 1% 1%;
-  font-size: 1.5em;
+  padding: 1% 0 1.3% 0.2em;
+  font-size: 1.8em;
 }
 .section_7 .formDiv .contact .contactForm button {
   width: 30%;
