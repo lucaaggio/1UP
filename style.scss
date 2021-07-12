@@ -1,5 +1,14 @@
 @import "node_modules/pixel-borders/src/styles/pixel-borders.scss";
 
+@font-face {
+  font-family: Mono;
+  src: url(assets/fonts/mono/spacemono-regular-webfont.woff);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/roboto/roboto-regular-webfont.woff)
+    url(assets/fonts/roboto/roboto-light-webfont.woff);
+}
 * {
   vertical-align: baseline;
   font-weight: inherit;
@@ -10,15 +19,22 @@
   outline: 0;
   padding: 0;
   margin: 0;
+  font-family: Mono;
 }
 h2 {
   font-size: 2em;
 }
 p {
   font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
 }
 ul {
   list-style: none;
+}
+li,
+p {
+  font-family: Roboto;
 }
 
 $primaryColor: #3366ff;
@@ -124,7 +140,7 @@ $purpleColor: #9091fb;
     h2 {
       text-align: center;
       color: $bgColor;
-      line-height: 1.5em;
+      line-height: 1.8;
       font-style: italic;
     }
   }
@@ -228,7 +244,7 @@ $purpleColor: #9091fb;
     }
   }
   .servingImg {
-    width: 20%;
+    width: 100%;
   }
 }
 

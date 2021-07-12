@@ -395,6 +395,14 @@
   background-color: #e45b3f;
 }
 
+@font-face {
+  font-family: Mono;
+  src: url(assets/fonts/mono/spacemono-regular-webfont.woff);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/roboto/roboto-regular-webfont.woff) url(assets/fonts/roboto/roboto-light-webfont.woff);
+}
 * {
   vertical-align: baseline;
   font-weight: inherit;
@@ -405,6 +413,7 @@
   outline: 0;
   padding: 0;
   margin: 0;
+  font-family: Mono;
 }
 
 h2 {
@@ -413,10 +422,17 @@ h2 {
 
 p {
   font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 ul {
   list-style: none;
+}
+
+li,
+p {
+  font-family: Roboto;
 }
 
 .paddingTop {
@@ -522,7 +538,7 @@ ul {
 .section_1 .title h2 {
   text-align: center;
   color: #f2f2f2;
-  line-height: 1.5em;
+  line-height: 1.8;
   font-style: italic;
 }
 .section_1 .icon {
@@ -622,7 +638,7 @@ ul {
   padding: 7%;
 }
 .serving .servingImg {
-  width: 20%;
+  width: 100%;
 }
 
 .section_3 {
