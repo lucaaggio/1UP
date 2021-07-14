@@ -3,6 +3,7 @@
     "pixel-borders": "^1.1.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "gsap": "^3.7.0"
   }
 }
