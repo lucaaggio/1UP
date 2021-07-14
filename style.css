@@ -1256,7 +1256,7 @@ footer .social i {
     display: none;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   h2 {
     font-size: 1.7em;
   }
