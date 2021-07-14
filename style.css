@@ -1361,6 +1361,9 @@ footer .social i {
   .section_5 .plan .freePlan .space {
     padding: 0;
   }
+  .section_5 .plan .ulSpace {
+    padding-left: 5%;
+  }
   .section_5 .plan .proPlan {
     width: 80%;
     display: flex;
@@ -1368,7 +1371,10 @@ footer .social i {
     align-items: center;
   }
   .section_5 .plan .proPlan .space {
-    padding: 0 0 0 5%;
+    padding: 0;
+  }
+  .section_5 .plan .proPlan h2 {
+    padding-left: 5%;
   }
   .section_5 button {
     margin-bottom: 1em;
