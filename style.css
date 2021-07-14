@@ -560,6 +560,11 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
 ul {
   list-style: none;
 }

@@ -9,6 +9,14 @@
   src: url(assets/fonts/roboto/roboto-regular-webfont.woff)
     url(assets/fonts/roboto/roboto-light-webfont.woff);
 }
+
+$primaryColor: #3366ff;
+$bgColor: #f2f2f2;
+$grayColor: #c4c4c4;
+$associatedColor: #f5c343;
+$secondaryColor: #c6eafa;
+$purpleColor: #9091fb;
+
 * {
   vertical-align: baseline;
   font-weight: inherit;
@@ -185,6 +193,10 @@ p {
   font-weight: 300;
   line-height: 1.5;
 }
+a {
+  text-decoration: none;
+  color: $bgColor;
+}
 ul {
   list-style: none;
 }
@@ -192,13 +204,6 @@ li,
 p {
   font-family: Roboto;
 }
-
-$primaryColor: #3366ff;
-$bgColor: #f2f2f2;
-$grayColor: #c4c4c4;
-$associatedColor: #f5c343;
-$secondaryColor: #c6eafa;
-$purpleColor: #9091fb;
 
 body {
   background: $bgColor;
