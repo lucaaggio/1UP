@@ -32,7 +32,41 @@
             <li>CONTACT</li>
           </ul>
         </div>
+       
       </div>
+       <!-- menu hamburger -->
+       
+       <!-- <nav class="top-nav top-nav-layout hamburger">
+        <input type="checkbox" id="menustate" class="menu-checkbox">
+        <div class="hamburger-menu">
+          <div class="hamburger-menu__logo">
+          </div>
+          <label class="hamburger-menu__ctrl" for="menustate" id="menulabel">
+            <div class="hamburger-menu__ctrl--button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
+        <div class="menu_content no-scrollbar">
+          <div class="menu_content__items">
+            <ul>
+              <li>
+                <a href="#">ABOUT</a>
+              </li>
+              <li>
+                <a href="#">SERVICE</a>
+              </li>
+              <li>
+                <a href="#">CONTACT</a>
+              </li>
+
+            </ul>
+           </div>
+        </div>
+      </nav> -->
+      <!-- fine hamburger -->
       <div class="title flex alignCenter center">
         <h2>
           LA NOSTRA PIATTAFORMA HA LO SCOPO DI RAPPRESENTARE UNA
@@ -98,57 +132,67 @@
         </div>
       </div>
       <!-- personalizzazione / svago / community -->
-
+      <div class="psc">
       <div class="flex list flexBetween">
-        <!-- personalizzazione -->
-        <div class="flex column listElement personaliz">
-          <div class="flex flexEnd imgList">
-            <img
-              src="assets/images/section_2/matita.png"
-              alt="matita"
-              class="iconList matita"
-            />
+
+          <!-- personalizzazione -->
+          <div class="flex column listElement personalizzazione">
+            <div class="flex flexEnd imgList">
+              <img
+                src="assets/images/section_2/matita.png"
+                alt="matita"
+                class="iconList matita"
+              />
+            </div>
+            <h2>PERSONALIZZAZIONE</h2>
+            <p>
+              Lo spazio che abitiamo ci rappresenta, parla di noi, è il luogo in
+              cui manifestiamo degli aspetti del nostro essere.
+            </p>
           </div>
-          <h2>PERSONALIZZAZIONE</h2>
-          <p>
-            Lo spazio che abitiamo ci rappresenta, parla di noi, è il luogo in
-            cui manifestiamo degli aspetti del nostro essere.
-          </p>
-        </div>
-        <!-- svago -->
-        <div class="flex column listElement svago">
-          <div class="flex flexEnd imgList">
-            <img
-              src="assets/images/section_2/tazza.png"
-              alt="tazza"
-              class="iconList"
-            />
+          <!-- svago -->
+          <div class="flex column listElement svago">
+            <div class="flex flexEnd imgList">
+              <img
+                src="assets/images/section_2/tazza.png"
+                alt="tazza"
+                class="iconList"
+              />
+            </div>
+            <h2>SVAGO</h2>
+            <p>
+              È dimostrato che un momento di gioco allevia la pressione e
+              rilascia endorfine e serotonina.
+            </p>
           </div>
-          <h2>SVAGO</h2>
-          <p>
-            È dimostrato che un momento di gioco allevia la pressione e rilascia
-            endorfine e serotonina.
-          </p>
-        </div>
-        <!-- community -->
-        <div class="flex column listElement">
-          <div class="flex flexEnd imgList">
-            <img
-              src="assets/images/section_2/community.png"
-              alt="community"
-              class="iconList iconCommunity"
-            />
+          <!-- community -->
+          <div class="flex column listElement community">
+            <div class="flex flexEnd imgList">
+              <img
+                src="assets/images/section_2/community.png"
+                alt="community"
+                class="iconList iconCommunity"
+              />
+            </div>
+            <h2>COMMUNITY</h2>
+            <p>
+              La collaborazione e il confronto sono sempre occasioni di crescita
+              e miglioramento.
+            </p>
           </div>
-          <h2>COMMUNITY</h2>
-          <p>
-            La collaborazione e il confronto sono sempre occasioni di crescita e
-            miglioramento.
-          </p>
         </div>
       </div>
-      <div class="serving">
+      </div>
+      <div class="serving desktop">
         <img
           src="assets/gif/stella_1.gif"
+          alt="stella notifica"
+          class="servingImg"
+        />
+      </div>
+      <div class="serving mobile">
+        <img
+          src="assets/gif/stella_4.gif"
           alt="stella notifica"
           class="servingImg"
         />
@@ -166,7 +210,7 @@
           Un'opportunità unica per dare una seconda vita al tuo ufficio
         </h2>
         <div class="relative">
-          <img src="assets/images/section_3/pc.png" alt="notebook" class="pc" />
+          <img src="assets/images/section_3/pc.png" alt="notebook" class="pc desktop" />
           <img
             src="assets/images/section_3/phone.png"
             alt="phone"
@@ -201,24 +245,28 @@
             con i colleghi, ma anche un luogo con ambienti più confortevoli che
             facciano sentire le persone più a loro agio come a casa.
           </p>
+          <div class="serving desktop">
+            <img
+              src="assets/gif/stella_2.gif"
+              alt="stella notifica"
+              class="servingImg"
+            />
+          </div>
+          <div class="serving mobile">
+            <img
+              src="assets/gif/stella_5.gif"
+              alt="stella notifica"
+              class="servingImg"
+            />
+          </div>
         </div>
+
         <div class="flex flexEnd flexBetween">
           <div class="whiteCube"></div>
           <div class="whiteCube"></div>
         </div>
       </div>
       <!-- serving -->
-      <div class="flex flexEnd flexBetween">
-        <div class="whiteCube"></div>
-        <div class="whiteCube"></div>
-        <div class="serving">
-          <img
-            src="assets/gif/stella_2.gif"
-            alt="stella notifica"
-            class="servingImg"
-          />
-        </div>
-      </div>
     </div>
     <!-- section_5 -->
     <div class="section_5">
@@ -242,7 +290,7 @@
                 <li>3 default avatar</li>
                 <li>5000 free coin</li>
               </ul>
-              <button>TRY FOR FREE</button>
+              <button class="big">TRY FOR FREE</button>
             </div>
           </div>
           <div class="flex column proPlan">
@@ -265,7 +313,7 @@
                   </ul>
                 </div>
               </div>
-              <button>ENTER IN YOUR OFFICE</button>
+              <button class="big">ENTER IN YOUR OFFICE</button>
             </div>
           </div>
         </div>
@@ -304,9 +352,16 @@
         <div class="whiteCube"></div>
       </div>
       <div class="formDiv">
-        <div class="serving">
+        <div class="serving desktop">
           <img
             src="assets/gif/stella_3.gif"
+            alt="stella notifica"
+            class="servingImg"
+          />
+        </div>
+        <div class="serving mobile">
+          <img
+            src="assets/gif/stella_6.gif"
             alt="stella notifica"
             class="servingImg"
           />
@@ -324,27 +379,23 @@
             <div class="flex flexBetween space">
               <div class="flex column name">
                 <label>NAME</label>
-                <input type="text" name="firstName" placeholder="Your name.." />
+                <input type="text" name="firstName" placeholder="Name.." />
               </div>
-              <div class="flex column name">
+              <div class="flex column name surname">
                 <label>SURNAME</label>
-                <input
-                  type="text"
-                  name="secondName"
-                  placeholder="Your name.."
-                />
+                <input type="text" name="secondName" placeholder="Surname.." />
               </div>
             </div>
             <div class="flex column space">
               <label>EMAIL</label>
-              <input type="text" name="secondName" placeholder="Your name.." />
+              <input type="text" name="secondName" placeholder="Email.." />
             </div>
             <div class="flex column space">
               <label>MESSAGE</label>
               <textarea
                 type="text"
                 name="secondName"
-                placeholder="Your name.."
+                placeholder="Message.."
               ></textarea>
             </div>
             <button class="big">SUBMIT</button>
@@ -367,7 +418,7 @@
       <div class="flex flexBetween space">
         <div class="flex column flexBetween privacy">
           <img src="assets/images/logo_footer.svg" alt="logo" />
-          <p>privacy policy / cookie/ copiright</p>
+          <p class="desktop">privacy policy / cookie/ copiright</p>
         </div>
         <div class="flex info">
           <ul class="contatti">
@@ -378,11 +429,19 @@
               20131 Milano
             </li>
           </ul>
+          <div class="mobile">
+            <div class="line"></div>
+          </div>
           <ul class="social">
             <li><i class="fab fa-instagram"></i></li>
             <li><i class="fab fa-facebook"></i></li>
             <li><i class="fab fa-twitter"></i></li>
           </ul>
+        </div>
+        <div class="mobile">
+          <p>Privacy Policy</p>
+          <p>Terms & Condition</p>
+          <p>© 2018. All rights reserved</p>
         </div>
       </div>
       <div class="flex flexEnd flexBetween">

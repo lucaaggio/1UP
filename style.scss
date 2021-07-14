@@ -21,6 +21,161 @@
   margin: 0;
   font-family: Mono;
 }
+.mobile {
+  display: none;
+}
+//Hamburger menu
+.hamburger {
+  display: none;
+  z-index: 9999;
+}
+@function getColor($color-id) {
+  @return var(--color-#{$color-id});
+}
+
+$colors: (
+  light: #f2f2f2,
+  dark: #f2f2f2,
+  transparent: transparent,
+  hoverColor: #f5c343,
+);
+
+:root {
+  @each $id, $color in $colors {
+    --color-#{$id}: #{$color};
+  }
+}
+
+.top-nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  width: 100vw;
+  padding: 0;
+}
+
+.menu-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  &__logo {
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &__ctrl {
+    margin: 0 0 0 auto;
+
+    &--button {
+      margin: 2em 3rem 0;
+      padding: 5px;
+
+      cursor: pointer;
+      z-index: 20;
+      position: relative;
+
+      span {
+        display: block;
+        height: 4px;
+        width: 40px;
+        background-color: getColor(dark);
+        margin: 6px 0px 6px 0px;
+        transition: all 300ms ease-in-out;
+        transform: none;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.no-scrollbar {
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.menu_content {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
+  z-index: -10;
+  background: #000;
+  opacity: 0;
+  display: block;
+  margin-top: 0;
+  text-align: center;
+  transition: all 700ms ease-in-out;
+
+  &__items {
+    display: inline-block;
+    text-align: left;
+
+    ul {
+      transform: translateY(15vh);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li a {
+        display: inline-block;
+        font-size: 2rem;
+        color: getColor(light);
+        text-decoration: none;
+        line-height: 5rem;
+        transition: all 200ms linear;
+        font-family: Mono;
+        &:active,
+        &:hover {
+          color: getColor(hoverColor);
+        }
+      }
+    }
+  }
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(1) {
+  transform: translate(0, 10px) rotate(-45deg);
+  background-color: getColor(light);
+  position: relative;
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(2) {
+  transform: rotate(45deg) translateX(0px);
+  background-color: getColor(light);
+  position: relative;
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(3) {
+  transition: opacity 350ms linear;
+  opacity: 0;
+}
+
+#menustate:checked ~ .hamburger-menu .hamburger-menu__items {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+#menustate:checked ~ .menu_content {
+  z-index: 1;
+  opacity: 0.8;
+}
+
+//FINE MENU
+
 h2 {
   font-size: 2em;
 }
@@ -128,8 +283,10 @@ $purpleColor: #9091fb;
       list-style: none;
       justify-content: space-around;
       padding: 0 5em;
+      font-family: Mono;
       li {
-        font-size: 1.2em;
+        font-family: Mono;
+        font-size: 1.35em;
         font-style: italic;
         color: $bgColor;
       }
@@ -141,7 +298,7 @@ $purpleColor: #9091fb;
   }
 
   .title {
-    padding: 8em 20em;
+    padding: 8em 18%;
 
     h2 {
       text-align: center;
@@ -197,15 +354,15 @@ $purpleColor: #9091fb;
 
 .section_2 {
   background: $bgColor;
-  padding: 7em 10em;
+  padding: 7em 10em 0 10em;
   .mission {
     background: $secondaryColor;
     width: 100%;
 
     .missionText {
-      padding: 5em 20% 5em 5em;
+      padding: 3em 20% 5em 5em;
       h2 {
-        padding-bottom: 1.5em;
+        padding-bottom: 1em;
         font-weight: 600;
         font-style: italic;
       }
@@ -215,7 +372,7 @@ $purpleColor: #9091fb;
     }
   }
   .list {
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 
     .listElement {
       align-items: flex-start;
@@ -276,11 +433,12 @@ $purpleColor: #9091fb;
 }
 .section_4 {
   background: $bgColor;
-  padding: 15em 10em 7em 10em;
+  padding: 15em 10em 25em 10em;
   .why {
     background: $purpleColor;
     width: 100%;
     color: $bgColor;
+    position: relative;
     .whyText {
       padding: 5em 20% 5em 5em;
       h2 {
@@ -294,6 +452,11 @@ $purpleColor: #9091fb;
       .whyP2 {
         padding-top: 1em;
       }
+    }
+    .serving {
+      position: absolute;
+      right: 0;
+      bottom: -20em;
     }
   }
 }
@@ -309,9 +472,10 @@ $purpleColor: #9091fb;
   }
   li {
     font-size: 1.5em;
+    padding: 5px 0;
   }
   .ulSpace {
-    padding-right: 20%;
+    padding-right: 10%;
   }
   .plan {
     padding: 3em 0;
@@ -327,11 +491,13 @@ $purpleColor: #9091fb;
       $border-color: #000,
       $border-inset-color: false
     );
+    font-size: 1.5em;
+    padding: 0.5em;
   }
   .freePlan {
     @include pixel-borders(
       $corner-size: 2,
-      $border-size: 10px,
+      $border-size: 12px,
       $border-color: #000,
       $border-inset-color: false
     );
@@ -340,7 +506,9 @@ $purpleColor: #9091fb;
 
     button {
       background: $associatedColor;
-      padding: 1em;
+    }
+    ul {
+      padding-bottom: 1.2em;
     }
   }
   .proPlan {
@@ -355,7 +523,11 @@ $purpleColor: #9091fb;
 
     button {
       background: $bgColor;
-      padding: 1em;
+      margin-top: 1em;
+      font-size: 1.6em;
+    }
+    h2 {
+      padding-bottom: 1em;
     }
   }
 }
@@ -436,7 +608,7 @@ $purpleColor: #9091fb;
           resize: none;
           background: $bgColor;
           color: black;
-          padding: 1% 0 1% 1%;
+          padding: 0.5em 0 1% 0.5em;
           height: 80px;
           @include pixel-borders(
             $corner-size: 1,
@@ -451,7 +623,7 @@ $purpleColor: #9091fb;
           resize: none;
           background: $bgColor;
           color: black;
-          padding: 1% 0 1% 1%;
+          padding: 1% 0 1% 0.5em;
           @include pixel-borders(
             $corner-size: 1,
             $border-size: 5px,
@@ -511,6 +683,383 @@ footer {
     i {
       color: $primaryColor;
       font-size: 2em;
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .section_2 {
+    .list {
+      padding-left: 0em;
+      padding-right: 0em;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .serving .servingImg {
+    width: 120%;
+  }
+  .section_1 {
+    .title {
+      padding: 4.5em 10%;
+    }
+    .icon {
+      .stella {
+        left: 10%;
+        top: 25%;
+      }
+      .papera {
+        left: 15%;
+      }
+      .cuore {
+        top: 40%;
+      }
+
+      .scrivania {
+        width: 40%;
+      }
+    }
+    .last_1s_div {
+      padding: 0 0 2em 0;
+    }
+  }
+  .section_2 {
+    .psc {
+      .flex {
+        flex-direction: column;
+      }
+    }
+    .list {
+      .svago {
+        padding: 0;
+      }
+      .personalizzazione,
+      .svago,
+      .community {
+        padding: 0 10em;
+        .iconList {
+          width: 4em;
+        }
+      }
+      .community {
+        padding: 0 10em;
+        .iconList {
+          width: 5em;
+        }
+      }
+      .listElement {
+        .flex {
+          justify-content: center;
+          align-items: center;
+        }
+        h2 {
+          padding: 0.5em 0 0.8em 0;
+        }
+        p {
+          width: 100%;
+          padding-bottom: 1em;
+        }
+      }
+    }
+  }
+  .section_3 {
+    .relative {
+      display: flex;
+      justify-content: center;
+    }
+    h2 {
+      padding: 0 5em;
+    }
+
+    img {
+      width: 100%;
+    }
+    .phone {
+      width: 28%;
+      right: 8%;
+    }
+  }
+  .section_4 {
+    .why {
+      .whyText {
+        padding: 3em 10% 3em 10%;
+      }
+      .serving {
+        bottom: -16em;
+      }
+    }
+  }
+  .section_5 {
+    .plan {
+      flex-direction: column;
+      padding: 1em 0 0 0;
+      .freePlan {
+        width: 50%;
+        .space {
+          padding-left: 4em;
+        }
+      }
+      .proPlan {
+        width: 70%;
+        margin: 2em 0 1em 0;
+
+        .space {
+          padding-left: 4em;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .section_2 {
+    padding: 7em 5em 0 5em;
+    .mission {
+      .missionText {
+        padding-right: 10%;
+      }
+    }
+    .list {
+      .personalizzazione,
+      .svago,
+      .community {
+        padding: 0 5em;
+        .iconList {
+          width: 4em;
+        }
+      }
+    }
+  }
+  .section_4 {
+    padding: 10em 4em 20em 4em;
+    .why {
+      .serving {
+        right: 5%;
+      }
+    }
+  }
+  .section_6 {
+    padding: 0 4em 7em 4em;
+  }
+  .section_7 {
+    .formDiv {
+      .contact {
+        margin: 3em 5%;
+        .contactForm {
+          button {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.7em;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .section_1 {
+    .logo {
+      img {
+        padding: 0 0 0 5%;
+      }
+      .coin {
+        padding-left: 10%;
+        img {
+          width: 45px;
+        }
+      }
+    }
+    .title {
+      padding: 4.5em 5%;
+      h2 {
+        font-size: 1.7em;
+        line-height: 1.5;
+        text-align: start;
+      }
+    }
+
+    .icon {
+      height: 250px;
+      .valigia {
+        width: 30%;
+        top: 2%;
+      }
+      .papera {
+        width: 13%;
+      }
+      .cuore {
+        width: 13%;
+        top: 44%;
+        left: 33%;
+      }
+      .stella {
+        width: 13%;
+        top: 28%;
+      }
+      .scrivania {
+        width: 45%;
+      }
+    }
+  }
+  .section_2 {
+    padding: 5em 5% 0 5%;
+    .mission {
+      .missionText {
+        padding: 2em 5% 3em 5%;
+        p {
+          font-size: 1.4em;
+        }
+      }
+    }
+    .list {
+      .personalizzazione,
+      .svago,
+      .community {
+        padding: 0 5%;
+      }
+    }
+  }
+  .section_3 {
+    h2 {
+      padding: 1em 5% 0 5%;
+    }
+    .small {
+      padding: 1em 5% 1em 5%;
+    }
+    .relative {
+      justify-content: flex-end;
+    }
+    .phone {
+      width: 80%;
+      position: relative;
+    }
+  }
+  .section_4 {
+    padding: 5em 5% 20em 5%;
+    .why {
+      .whyText {
+        padding: 2em 5% 2em 5%;
+        p {
+          font-size: 1.4em;
+        }
+      }
+      .serving {
+        bottom: -20em;
+        right: 10%;
+      }
+    }
+  }
+  .section_5 {
+    .plan {
+      align-items: center;
+      width: 100%;
+      .freePlan {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .space {
+          padding: 0;
+        }
+      }
+      .proPlan {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .space {
+          padding: 0 0 0 5%;
+        }
+      }
+    }
+    button {
+      margin-bottom: 1em;
+    }
+  }
+  .section_6 {
+    padding: 0 5% 3em 5%;
+    img {
+      width: 25%;
+    }
+    .login {
+      margin: 3em 0;
+      h2 {
+        padding: 0.5em 0.5em 1em 0.5em;
+      }
+    }
+  }
+  .section_7 {
+    .formDiv {
+      padding: 3em 0 0 0;
+      .contact {
+        margin: 2em 5%;
+        .contactForm {
+          padding: 2em 10% 2em 6.5%;
+          .space {
+            flex-direction: column;
+          }
+          .name {
+            width: 100%;
+          }
+          .surname {
+            padding-top: 1em;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .column {
+      align-items: center;
+    }
+    img {
+      width: 20%;
+      padding-bottom: 1em;
+    }
+    .space {
+      flex-direction: column;
+    }
+    .info {
+      flex-direction: column;
+    }
+    .contatti {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1em;
+    }
+    .social {
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .mobile {
+      padding-top: 0.5em;
+      p {
+        text-align: center;
+        font-size: 1em;
+      }
+      .line {
+        height: 1px;
+        width: 100%;
+        background: $primaryColor;
+        margin-bottom: 1.5em;
+      }
     }
   }
 }
