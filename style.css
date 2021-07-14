@@ -1245,7 +1245,7 @@ footer .social i {
 
   .hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
   }
 
   .menu {
