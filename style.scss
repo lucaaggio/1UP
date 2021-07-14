@@ -21,6 +21,7 @@
   margin: 0;
   font-family: Mono;
 }
+
 .mobile {
   display: none;
 }
@@ -199,6 +200,9 @@ $associatedColor: #f5c343;
 $secondaryColor: #c6eafa;
 $purpleColor: #9091fb;
 
+body {
+  background: $bgColor;
+}
 .paddingTop {
   padding-top: 2em;
 }

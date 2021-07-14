@@ -569,6 +569,10 @@ p {
   font-family: Roboto;
 }
 
+body {
+  background: #f2f2f2;
+}
+
 .paddingTop {
   padding-top: 2em;
 }
