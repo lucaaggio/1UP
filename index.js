@@ -38,3 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
   loader = document.getElementById("loading");
   loadNow(4);
 });
+
+//Count click
+
+var count = document.getElementById("count"),
+  n = 19;
+count.onclick = function () {
+  n += 1;
+  count.innerHTML = n;
+};
