@@ -30,6 +30,16 @@ $purpleColor: #9091fb;
   font-family: Mono;
 }
 
+#loading {
+  background: $bgColor url("/assets/gif/MONETAx3.gif") no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999999;
+}
+
 .mobile {
   display: none;
 }

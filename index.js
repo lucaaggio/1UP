@@ -1,5 +1,3 @@
-import anime from "./node_modules/animejs/lib/anime.es.js";
-
 const links = document.querySelectorAll("ul a");
 
 for (const link of links) {
@@ -16,3 +14,27 @@ function clickHandler(e) {
     behavior: "smooth",
   });
 }
+
+//load page
+var loader;
+
+function loadNow(opacity) {
+  if (opacity <= 0) {
+    displayContent();
+  } else {
+    loader.style.opacity = opacity;
+    window.setTimeout(function () {
+      loadNow(opacity - 0.05);
+    }, 50);
+  }
+}
+
+function displayContent() {
+  loader.style.display = "none";
+  document.getElementById("content").style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loader = document.getElementById("loading");
+  loadNow(4);
+});
