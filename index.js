@@ -1,3 +1,5 @@
+import anime from "./node_modules/animejs/lib/anime.es.js";
+
 const links = document.querySelectorAll("ul a");
 
 for (const link of links) {

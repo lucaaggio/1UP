@@ -49,12 +49,6 @@ $colors: (
   hoverColor: #f5c343,
 );
 
-:root {
-  @each $id, $color in $colors {
-    --color-#{$id}: #{$color};
-  }
-}
-
 .top-nav {
   top: 0;
   left: 0;
@@ -265,8 +259,23 @@ body {
 }
 //css section1
 
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section_1 {
   background: $primaryColor;
+  left: -100px;
   .logo {
     flex-grow: 3;
     img {
@@ -426,6 +435,7 @@ body {
 .section_3 {
   background: $primaryColor;
   color: $bgColor;
+  margin-top: -15em;
   .big {
     font-weight: 600;
   }
@@ -442,7 +452,10 @@ body {
 }
 .section_4 {
   background: $bgColor;
-  padding: 15em 10em 25em 10em;
+  padding: 14em 10em 24em 10em;
+  #about {
+    padding-top: 1em;
+  }
   .why {
     background: $purpleColor;
     width: 100%;
@@ -472,6 +485,10 @@ body {
 
 .section_5 {
   background: $secondaryColor;
+  #service {
+    padding-top: 1em;
+    background: $bgColor;
+  }
   h2 {
     padding: 1em 0;
   }
@@ -703,6 +720,9 @@ footer {
       padding-right: 0em;
     }
   }
+  .section_3 {
+    margin-top: -5em;
+  }
 }
 @media (max-width: 1280px) {
   .serving .servingImg {
@@ -772,6 +792,7 @@ footer {
     }
   }
   .section_3 {
+    margin-top: -5em;
     .relative {
       display: flex;
       justify-content: center;
@@ -943,6 +964,7 @@ footer {
     }
   }
   .section_3 {
+    margin-top: 0;
     h2 {
       padding: 1em 5% 0 5%;
     }

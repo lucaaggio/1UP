@@ -8,11 +8,12 @@
     <link rel="shortcut icon" type="image/svg" href="assets/images/logo.svg" />
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
   </head>
   <body>
     <div class="section_1">
-      <div class="flex flexStart flexBetween">
+      <div  class="flex flexStart flexBetween">
         <div class="whiteCube"></div>
         <div class="whiteCube"></div>
       </div>
@@ -109,9 +110,9 @@
       </div>
     </div>
     <!-- SECTION 2 -->
-    <div class="section_2">
+    <div  class="section_2">
       <!-- mission text -->
-      <div class="mission">
+      <div data-aos="zoom-in" data-aos-duration="1200" class="mission">
         <div class="flex flexStart flexBetween">
           <div class="whiteCube"></div>
           <div class="whiteCube"></div>
@@ -132,8 +133,8 @@
         </div>
       </div>
       <!-- personalizzazione / svago / community -->
-      <div class="psc">
-      <div class="flex list flexBetween">
+      <div  class="psc">
+      <div data-aos="zoom-in" data-aos-duration="2000" class="flex list flexBetween">
 
           <!-- personalizzazione -->
           <div class="flex column listElement personalizzazione">
@@ -183,7 +184,7 @@
         </div>
       </div>
       </div>
-      <div class="serving desktop">
+      <div data-aos="zoom-in" data-aos-duration="2000" class="serving desktop">
         <img
           src="assets/gif/stella_1.gif"
           alt="stella notifica"
@@ -199,7 +200,7 @@
       </div>
     </div>
     <!-- SECTION 3 -->
-    <div class="section_3">
+    <div data-aos="fade-right" data-aos-duration="1200" class="section_3">
       <div class="flex flexStart flexBetween">
         <div class="whiteCube"></div>
         <div class="whiteCube"></div>
@@ -224,8 +225,9 @@
       </div>
     </div>
     <!-- SECTION 4 -->
-    <div  class="section_4">
-      <div id="about" class="why">
+    <div class="section_4">
+      <div id="about">
+      <div data-aos="fade-left" data-aos-duration="1200" class="why">
         <div class="flex flexStart flexBetween">
           <div class="whiteCube"></div>
           <div class="whiteCube"></div>
@@ -266,21 +268,25 @@
           <div class="whiteCube"></div>
         </div>
       </div>
+    </div>
       <!-- serving -->
     </div>
     <!-- section_5 -->
     <div class="section_5">
+      <div id="service"></div>
+      <div data-aos="fade-right" data-aos-duration="1200">
       <div class="flex flexStart flexBetween">
         <div class="whiteCube"></div>
         <div class="whiteCube"></div>
       </div>
       <!-- inside s_5 -->
-      <div id="service" class="flex column alignCenter">
+      
+      <div class="flex column alignCenter">
         <div>
           <h2 class="big italic">PIANI E ABBONAMENTI</h2>
         </div>
         <div class="flex flexAround plan">
-          <div class="flex column flexStart freePlan">
+          <div data-aos="zoom-in" data-aos-duration="1500" class="flex column flexStart freePlan">
             <div class="space">
               <h2>free</h2>
               <ul>
@@ -293,7 +299,7 @@
               <button class="big">TRY FOR FREE</button>
             </div>
           </div>
-          <div class="flex column proPlan">
+          <div data-aos="zoom-in" data-aos-duration="1500" class="flex column proPlan">
             <div class="space">
               <h2 class="big">19 €\mese</h2>
               <div class="flex">
@@ -318,14 +324,16 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- close s_5 -->
       <div class="flex flexEnd flexBetween">
         <div class="whiteCube"></div>
         <div class="whiteCube"></div>
       </div>
     </div>
+  </div>
     <!-- section_6 -->
-    <div class="flex column alignCenter section_6">
+    <div data-aos="zoom-in" data-aos-duration="1200" class="flex column alignCenter section_6">
       <img src="assets/gif/smile_render2.gif" alt="mascotte" />
       <h2 class="big">TRY IT YOURSELF</h2>
       <button class="italic">TRY THE DEMO</button>
@@ -371,7 +379,7 @@
         <div   class="flex center">
           <h2>ANY QUESTION?</h2>
         </div>
-        <div class="contact">
+        <div data-aos="zoom-in" data-aos-duration="1200" class="contact">
           <div class="flex flexStart flexBetween">
             <div class="whiteCube"></div>
             <div class="whiteCube"></div>
@@ -451,7 +459,11 @@
         <div class="whiteCube"></div>
       </div>
     </footer>
+   
   </body>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script type="module" src="index.js" ></script>
 </html>

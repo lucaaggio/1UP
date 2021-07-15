@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "animejs": "^3.2.1",
     "gsap": "^3.7.0"
   }
 }
