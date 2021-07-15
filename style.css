@@ -1111,7 +1111,7 @@ footer .space {
   padding: 2em 5% 0 5%;
 }
 footer img {
-  width: 30%;
+  width: 18%;
 }
 footer li {
   padding-bottom: 1.5em;
@@ -1119,12 +1119,25 @@ footer li {
 footer .contatti {
   margin-left: -20%;
 }
+footer .contatti p {
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+footer .contatti i {
+  font-size: 1.8em;
+}
+footer .contatti .desktop p {
+  font-size: 1em;
+}
 footer .social {
   margin-left: 20%;
 }
 footer .social i {
   color: #3366ff;
-  font-size: 2em;
+  font-size: 3em;
+}
+footer .social i:hover {
+  color: #f5c343;
 }
 
 @media (max-width: 1536px) {

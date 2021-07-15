@@ -696,19 +696,34 @@ footer {
     padding: 2em 5% 0 5%;
   }
   img {
-    width: 30%;
+    width: 18%;
   }
   li {
     padding-bottom: 1.5em;
   }
   .contatti {
     margin-left: -20%;
+    p {
+      padding-left: 1em;
+      font-size: 1.5em;
+    }
+    i {
+      font-size: 1.8em;
+    }
+    .desktop {
+      p {
+        font-size: 1em;
+      }
+    }
   }
   .social {
     margin-left: 20%;
     i {
       color: $primaryColor;
-      font-size: 2em;
+      font-size: 3em;
+      &:hover {
+        color: $associatedColor;
+      }
     }
   }
 }
@@ -1098,6 +1113,7 @@ footer {
         text-align: center;
         font-size: 1em;
       }
+
       .line {
         height: 1px;
         width: 100%;
