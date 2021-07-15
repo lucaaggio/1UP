@@ -462,6 +462,9 @@ body {
     bottom: -20%;
     right: 5%;
   }
+  .pc {
+    width: 100%;
+  }
 }
 .section_4 {
   background: $bgColor;
@@ -491,7 +494,7 @@ body {
     .serving {
       position: absolute;
       right: 0;
-      bottom: -15em;
+      bottom: -50%;
     }
   }
 }

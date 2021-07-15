@@ -837,6 +837,9 @@ body {
   bottom: -20%;
   right: 5%;
 }
+.section_3 .pc {
+  width: 100%;
+}
 
 .section_4 {
   background: #f2f2f2;
@@ -868,7 +871,7 @@ body {
 .section_4 .why .serving {
   position: absolute;
   right: 0;
-  bottom: -15em;
+  bottom: -50%;
 }
 
 .section_5 {
