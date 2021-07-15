@@ -933,6 +933,10 @@ body {
 .section_5 .freePlan button {
   background: #f5c343;
 }
+.section_5 .freePlan button:hover {
+  background: black;
+  color: #f2f2f2;
+}
 .section_5 .freePlan ul {
   padding-bottom: 1.2em;
 }
@@ -956,6 +960,10 @@ body {
   background: #f2f2f2;
   margin-top: 1em;
   font-size: 1.6em;
+}
+.section_5 .proPlan button:hover {
+  background: #3366ff;
+  color: #f2f2f2;
 }
 .section_5 .proPlan h2 {
   padding-bottom: 1em;
@@ -992,6 +1000,10 @@ body {
     border-radius: 26px;
   }
 }
+.section_6 button:hover {
+  background: #9091fb;
+  color: #f2f2f2;
+}
 .section_6 .login {
   margin: 5em 0;
   background: #3366ff;
@@ -1020,6 +1032,10 @@ body {
   .section_6 .login button {
     border-radius: 26px;
   }
+}
+.section_6 .login button:hover {
+  background: #f2f2f2;
+  color: #3366ff;
 }
 
 .section_7 {
@@ -1112,6 +1128,10 @@ body {
   .section_7 .formDiv .contact .contactForm button {
     border-radius: 17px;
   }
+}
+.section_7 .formDiv .contact .contactForm button:hover {
+  background: black;
+  color: #f2f2f2;
 }
 .section_7 .massi .whiteCube {
   background: #9091fb;

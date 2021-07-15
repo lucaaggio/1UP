@@ -545,6 +545,10 @@ body {
 
     button {
       background: $associatedColor;
+      &:hover {
+        background: black;
+        color: $bgColor;
+      }
     }
     ul {
       padding-bottom: 1.2em;
@@ -564,6 +568,10 @@ body {
       background: $bgColor;
       margin-top: 1em;
       font-size: 1.6em;
+      &:hover {
+        background: $primaryColor;
+        color: $bgColor;
+      }
     }
     h2 {
       padding-bottom: 1em;
@@ -596,6 +604,10 @@ body {
     );
     padding: 1% 5%;
     font-size: 2em;
+    &:hover {
+      background: $purpleColor;
+      color: $bgColor;
+    }
   }
   .login {
     margin: 5em 0;
@@ -618,6 +630,10 @@ body {
         $border-color: $bgColor,
         $border-inset-color: false
       );
+      &:hover {
+        background: $bgColor;
+        color: $primaryColor;
+      }
     }
   }
 }
@@ -691,6 +707,10 @@ body {
             $border-inset-color: false
           );
           font-size: 2em;
+          &:hover {
+            background: black;
+            color: $bgColor;
+          }
         }
       }
     }
