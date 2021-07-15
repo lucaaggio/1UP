@@ -32,7 +32,7 @@ $purpleColor: #9091fb;
 
 #loading {
   background: $bgColor url("/assets/gif/MONETAx3.gif") no-repeat center center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
