@@ -1136,6 +1136,10 @@ footer .social i {
   .section_3 {
     margin-top: -5em;
   }
+
+  .section_4 .why .serving {
+    bottom: -25em;
+  }
 }
 @media (max-width: 1280px) {
   .serving .servingImg {
@@ -1218,7 +1222,7 @@ footer .social i {
     padding: 3em 10% 3em 10%;
   }
   .section_4 .why .serving {
-    bottom: -16em;
+    bottom: -25em;
   }
 
   .section_5 .plan {
